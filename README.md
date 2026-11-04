@@ -21,29 +21,29 @@ write them and we do not claim that we did.
 
 ## The archive
 
-One archive, `submission.zip`: **26,271,346 bytes**, SHA-256
-`a25c038c923ceca62ba373810715ed8b2d8796444e76143a2d959f168e3d886e`, 18
-members. Every member is pinned by SHA-256 in
+One archive, `submission.zip`: **26,156,017 bytes**, SHA-256
+`44ef406039b7003367db18d59c6822668afa766544f9314b5cf8dd752b16f604`, 18 members. Every member is pinned by SHA-256 in
 [`receipts/submission-manifest.json`](receipts/submission-manifest.json).
 
-**Measured public leaderboard score of the previous submission: 24.43253**
-(team *Nicks Seringian*, `nicks037`, 4 November 2026). That number was produced
-by the organisers' verifier, not by us. The archive described here is the
-**v5** rebuild on the frontier published on 2026-11-04 at 08:00 UTC; its
-**local** geometric mean is **24.556835** (headline **24.5568**). When the
-organisers scored that archive the **published** score was **24.55683** - the
+This is the **v6** rebuild, on the public frontier as of 4 November 2026
+16:00 UTC. Its **local** geometric mean is **24.594195** (headline **24.59420**).
+That is a local measurement and we publish it as such. The authoritative
+number is always the one on the competition's own leaderboard, not this
+page.
+
+**Measured public leaderboard score of the preceding (v5) submission:
+24.55683** (team *Nicks Seringian*, `nicks037`, 4 November 2026) - the
 organisers' own number, read from the competition leaderboard on 4 November
-2026 at 16:02 UTC, where it held rank **270** of 2,285 teams. The
-authoritative number is always the one on the competition's own leaderboard,
-not this page.
+2026 at 16:02 UTC, where it held rank **270** of 2,285 teams. The v5 archive
+had SHA-256 `a25c038c923ceca62ba373810715ed8b2d8796444e76143a2d959f168e3d886e`.
 
 | benchmark | competition name | circuit | author (Apache-2.0) | local official-verifier cost | factor vs reference |
 |---|---|---|---|---:|---:|
-| `invsqrt.kmb` | **fusion** | `53000387a86b` | Leo Tang | 98,061.19483958285 | **21.1783489x** |
-| `dqi.kmb` | **combinatorial optimization** | `748b01a7a076` | alex chilton | 375,374,174,093.81177 | **65.1069392x** |
-| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | **chemistry** | `37204439f717` | Heliosli (Isabe11aM00re's weights on Syed Asad Ali's loaders) | 312,444,127.2287831 | **10.7398390x** |
+| `invsqrt.kmb` | **fusion** | `af4698478fba` | Agniv Banerjee | 97921.57954257724 | **21.2085451x** |
+| `dqi.kmb` | **combinatorial optimization** | `748b01a7a076` | alex chilton | 375374174093.81176757812 | **65.1069393x** |
+| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | **chemistry** | `a56ec354e8b8` + `0ed964465654` loaders | Agniv Banerjee (weights) on Ayodeji's loaders | 311465857.06660532951 | **10.7735712x** |
 
-Local geometric mean of the three ratios: **24.556835**.
+Local geometric mean of the three ratios: **24.594195**.
 
 The organisers measure the reference cost with a per-split secret salt, so the
 last digits of a published score can differ from a local run; ours differ in
@@ -92,26 +92,27 @@ authoritative copy of the archive is the one attached to the competition
 submission.
 
 The same cell is in this repository as
-[`notebooks/generate-submission-v5.ipynb`](notebooks/generate-submission-v5.ipynb).
+[`notebooks/generate-submission-v6.ipynb`](notebooks/generate-submission-v6.ipynb).
 
 ## Measured results, not estimates
 
 Every number above comes from a recorded verifier run. The receipts are in
 [`receipts/`](receipts/):
 
-- `receipts/invsqrt-verify.json` - the `invsqrt` verifier result (PASS, 262,144 shots, 62 qubits, circuit SHA-256)
-- `receipts/dqi-verify.json` - the `dqi` verifier result (PASS, 102,400 shots, 891 qubits, 0 phase errors, circuit SHA-256)
-- `receipts/dfthcsos-verify.json` - the `dfthcsos` verifier result (PASS, 87,232 shots, 15,525 Toffolis, 428 qubits)
-- `receipts/submission-manifest.json` - SHA-256 of every member of the submitted `submission.zip`, plus the archive's own SHA-256
+- `receipts/invsqrt-verify.json` - the `invsqrt` verifier result for the v6 fusion circuit (PASS, 262,144 shots, 62 qubits, circuit SHA-256). This one is a **sampled** run over the first 65,536 addresses, not the full domain, so it corroborates the ledger's ranking rather than reproducing the full-domain cost.
+- `receipts/dqi-verify.json` - the `dqi` verifier result (PASS, 102,400 shots, 891 qubits, 0 value errors, 0 phase errors, circuit SHA-256)
+- `receipts/dfthcsos-verify.json` - the `dfthcsos` verifier result for the v6 chemistry family (PASS, 87,232 shots, 15,459 Toffolis, 427 qubits, score 311,465,857.0666053)
+- `receipts/submission-manifest.json` - SHA-256 of every member of `submission.zip`, plus the archive's own SHA-256
+- `receipts/apache-manifest.csv` - the public circuit ledger this rebuild is taken from
 
 ## Reproduce it
 
 You need one cell. The dataset is optional.
 
 1. Optionally attach `manwithacat/vqcc-apache-public-circuits` (Add Input, then Datasets). If you do not attach it, turn **Internet** on in the Kaggle session panel and the cell will download the same 18 files itself.
-2. Run [`notebooks/generate-submission-v5.ipynb`](notebooks/generate-submission-v5.ipynb), or paste its single cell into a Kaggle notebook.
+2. Run [`notebooks/generate-submission-v6.ipynb`](notebooks/generate-submission-v6.ipynb), or paste its single cell into a Kaggle notebook.
 3. The cell prints the archive SHA-256. It must equal
-   `a25c038c923ceca62ba373810715ed8b2d8796444e76143a2d959f168e3d886e`.
+   `44ef406039b7003367db18d59c6822668afa766544f9314b5cf8dd752b16f604`.
 
 To run it outside Kaggle, mount the dataset directory and point the two
 environment variables at it:
@@ -119,7 +120,7 @@ environment variables at it:
 ```bash
 export VQCC_INPUT_ROOT=/path/to/the/dataset/parent
 export VQCC_WORK_DIR=/path/to/a/writable/dir
-python3 notebooks/generate-submission-v5.ipynb
+python3 notebooks/generate-submission-v6.ipynb
 ```
 
 The archive is byte-reproducible: fixed timestamps, fixed member order, fixed
