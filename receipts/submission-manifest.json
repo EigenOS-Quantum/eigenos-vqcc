@@ -1,134 +1,96 @@
 {
-  "archive_sha256": "dbab6a38a86d47bfe35cbbe83e97d79a70470a567ce0179dfe906a450b167409",
-  "archive_bytes": 29677118,
   "members": [
     {
-      "member": "dfthcsos/angle_k_0.kmb",
-      "sha256": "8b698f14b339bd282e0332a1f105b41d60bfa5218d107c775db2532fbd88f774",
-      "bytes": 451672
-    },
-    {
-      "member": "dfthcsos/angle_k_1.kmb",
-      "sha256": "0d16c5108e48e40931d87f1e3ee12d4486e932b341989ce909a47b032e5a7745",
-      "bytes": 448085
-    },
-    {
-      "member": "dfthcsos/angle_k_10.kmb",
-      "sha256": "e2668bf5666ca1e49541bef7a255b2100a8a513188fadef3a8dd4e892cfe2094",
-      "bytes": 400612
-    },
-    {
-      "member": "dfthcsos/angle_k_11.kmb",
-      "sha256": "5f69f385cb2040e7124e11e1cedb7cea0e0ffa6ad13abe81b2a337744cb9c2ac",
-      "bytes": 406276
-    },
-    {
-      "member": "dfthcsos/angle_k_12.kmb",
-      "sha256": "f86995a0ea1990a11a43f1812f47e00a77658f71cc544d44bd5003e616111272",
-      "bytes": 400502
-    },
-    {
-      "member": "dfthcsos/angle_k_13.kmb",
-      "sha256": "4390c8114e191b0c74ccd8b6302e5e0ded4e8cb412a3f146eea9887551658876",
-      "bytes": 401708
-    },
-    {
-      "member": "dfthcsos/angle_k_14.kmb",
-      "sha256": "9e596deb120f20d1c92c350456ce9847314ba943a4d196e7942bac518a229f6c",
-      "bytes": 401890
-    },
-    {
-      "member": "dfthcsos/angle_k_2.kmb",
-      "sha256": "b7b73491d3aeb59c70d023704df9f2ad69eb96c9d1f9e9920d33d60bd7852d11",
-      "bytes": 451996
-    },
-    {
-      "member": "dfthcsos/angle_k_3.kmb",
-      "sha256": "c2437ad406d3772e961e7229580fba7b68c036b97ce36b4067c865e3af729f00",
-      "bytes": 456266
-    },
-    {
-      "member": "dfthcsos/angle_k_4.kmb",
-      "sha256": "0df35ae1cb26d3bc09f022b2a397a8b07e5c322283d2c8cf0a53a4bb11b9dd47",
-      "bytes": 397777
-    },
-    {
-      "member": "dfthcsos/angle_k_5.kmb",
-      "sha256": "a9a649997bf0696a659c8cbf9e778f92bee2816b6212febc898ed51450ae42c3",
-      "bytes": 401580
-    },
-    {
-      "member": "dfthcsos/angle_k_6.kmb",
-      "sha256": "715673382c491b796865dbba235687eafebd16c745872d20f7ae1808f88a62ae",
-      "bytes": 404097
-    },
-    {
-      "member": "dfthcsos/angle_k_7.kmb",
-      "sha256": "31e004f932d42750e1dda98abdf3e0097941cb1b1bbd353ed692e52098119cfb",
-      "bytes": 404041
-    },
-    {
-      "member": "dfthcsos/angle_k_8.kmb",
-      "sha256": "046ac97b8c6ac9e1895a1da5dc89ea5df55bf487b1822d2ba11697c948145ff9",
-      "bytes": 400918
-    },
-    {
-      "member": "dfthcsos/angle_k_9.kmb",
-      "sha256": "10c37a55ab902357cf60c5cf529de0eec9e9497a03f0b2ad7a9888d26d9c1e63",
-      "bytes": 402097
-    },
-    {
-      "member": "dfthcsos/submission.npz",
-      "sha256": "64e7299eebd95fc37eb36de108e48cde33aaf6cdd17fa36e276e75f7d9af589c",
-      "bytes": 2033028
+      "member": "invsqrt.kmb",
+      "sha256": "af4698478fbad775a5a271690cf4c2d8783caf0b8d12048106d1973c4ac6862e",
+      "bytes": 479055
     },
     {
       "member": "dqi.kmb",
-      "sha256": "3779a3431e9cb072bad980919236bd961ad3bcbd162d1757d51379316a103a2d",
-      "bytes": 579770427
+      "sha256": "748b01a7a07662c3f7e389b844e313a3d55dfb3b3d993414e5ad3dfac6fe154c",
+      "bytes": 529710608
     },
     {
-      "member": "invsqrt.kmb",
-      "sha256": "bce2948ff24e20fe59666d131f7fc4316a905103937272c52fdd39d494b6fe47",
-      "bytes": 468731
+      "member": "dfthcsos/submission.npz",
+      "sha256": "ddce9a5bd7d67969e9b7ba4266fe1ae4c8946344553a6dbb7e1355d657bfc397",
+      "bytes": 1863164
+    },
+    {
+      "member": "dfthcsos/angle_k_0.kmb",
+      "sha256": "c28fdb135638296e1ccbad85ad707baa139321ceef5abecdc6bda86dbfdb47d0",
+      "bytes": 396933
+    },
+    {
+      "member": "dfthcsos/angle_k_1.kmb",
+      "sha256": "2196682be8711775e8817009ad9ba5225caaa72ae91947b0e35e99942cb1163c",
+      "bytes": 394900
+    },
+    {
+      "member": "dfthcsos/angle_k_2.kmb",
+      "sha256": "37be1597c4f7c99ee1de85fb2f87a82d7b97caab2bff666b7b7937cf583c94bd",
+      "bytes": 399458
+    },
+    {
+      "member": "dfthcsos/angle_k_3.kmb",
+      "sha256": "28af1e9c3afef751c42f734b332d6fa199a6471bf526941786d9592ea32a6151",
+      "bytes": 392891
+    },
+    {
+      "member": "dfthcsos/angle_k_4.kmb",
+      "sha256": "471cd8153570113eb3c36ce32be9bfaca85f15a4213af628a5b151ee9b4d0f6e",
+      "bytes": 358122
+    },
+    {
+      "member": "dfthcsos/angle_k_5.kmb",
+      "sha256": "a6b94471064c865605d30ff40adb05c7b920dd32e9401db2b0cdc7e1526acccd",
+      "bytes": 356361
+    },
+    {
+      "member": "dfthcsos/angle_k_6.kmb",
+      "sha256": "1058048b0247dd1bc81a662ab97badf51ade79585f5b07eb412c57e63f203856",
+      "bytes": 357332
+    },
+    {
+      "member": "dfthcsos/angle_k_7.kmb",
+      "sha256": "9e0b2182beeed5fb278207ab246f8b04184aaaec7aef4e0f6862f386a6f389ae",
+      "bytes": 348960
+    },
+    {
+      "member": "dfthcsos/angle_k_8.kmb",
+      "sha256": "7f761462e0def965b8a83f14a823139a0cae95e924fbaef610b8183766fd8aa6",
+      "bytes": 355400
+    },
+    {
+      "member": "dfthcsos/angle_k_9.kmb",
+      "sha256": "5298314defe51446f3735febc99302886bb2107cbf4dad7f9446aa8f49e51c50",
+      "bytes": 359657
+    },
+    {
+      "member": "dfthcsos/angle_k_10.kmb",
+      "sha256": "6eb67bbdce1eeb5b65c3b8c9a3ba4976729f8bf845f1ea3450a64c15581039d2",
+      "bytes": 358836
+    },
+    {
+      "member": "dfthcsos/angle_k_11.kmb",
+      "sha256": "71f078bc607d3aebf324e699fe3fe42d6744df541d34247b36a2096da455fe29",
+      "bytes": 357681
+    },
+    {
+      "member": "dfthcsos/angle_k_12.kmb",
+      "sha256": "a5a74fa106eb4fac32e13f4e37248af2c08d865f1e0a7dcf60572013f4986e8a",
+      "bytes": 358465
+    },
+    {
+      "member": "dfthcsos/angle_k_13.kmb",
+      "sha256": "605f81430a30417a40ec7eb2271cf175fa61930ef1ab74425acd8eca2160e622",
+      "bytes": 341040
+    },
+    {
+      "member": "dfthcsos/angle_k_14.kmb",
+      "sha256": "4e7c0a3730cb5a15887f3e56ca71acde4d7248e690a78df832063dc5c5666c49",
+      "bytes": 355951
     }
   ],
-  "score_model": {
-    "invsqrt_ratio": 20.650345290502518,
-    "dqi_ratio": 64.43705772540541,
-    "dfthcsos_ratio": 10.267558486447529,
-    "product": 13662.500944166592,
-    "geometric_mean": 23.906173567943,
-    "metric": "geometric mean of the three per-task cost ratios, 1/3 weight each",
-    "reference_costs": {
-      "invsqrt": 2076774.233715282,
-      "dqi": 24439463583672.93,
-      "chemistry": 3355599588.3155375
-    },
-    "note": "each ratio is the organisers' reference cost for that task divided by the cost the official verifier reported on our bytes",
-    "salt_spread": "the DQI task was re-measured on six verifier salts; the geometric mean moved by 0.000026%, from 23.906174 to 23.906180"
-  },
-  "previous_submission": {
-    "invsqrt_ratio": 20.032119,
-    "dqi_ratio": 61.20464,
-    "dfthcsos_ratio": 10.12196338594916,
-    "product": 12410.120580432045,
-    "geometric_mean": 23.15218587176755
-  },
-  "gain_vs_previous_pct": 3.2569673737233407,
-  "board_reference": {
-    "leader_breaking1800": 27.99617,
-    "target_30": 30.0
-  },
-  "targets": {
-    "to_reach_27.99617_dqi_ratio_needed": 103.48978172986966,
-    "to_reach_30_dqi_ratio_needed": 127.3401535297056
-  },
-  "source_of_circuits": {
-    "invsqrt.kmb": "Ehan Mallick, Apache-2.0, redistributed by manwithacat",
-    "dqi.kmb": "Akmal Xodarev (busyaprime), Apache-2.0, redistributed by manwithacat",
-    "dfthcsos/": "Isabe11aM00re, Apache-2.0, redistributed by manwithacat",
-    "dataset": "manwithacat/vqcc-apache-public-circuits"
-  },
-  "built_with": "B-REPO/src/package_submission.py (byte-reproducible: fixed timestamps)"
+  "archive_sha256": "44ef406039b7003367db18d59c6822668afa766544f9314b5cf8dd752b16f604",
+  "archive_bytes": 26156017
 }
