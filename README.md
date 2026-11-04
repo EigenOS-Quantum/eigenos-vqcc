@@ -19,7 +19,7 @@ current submission are other competitors' Apache-2.0 public work. They are
 credited by name, by URL and by licence, as Apache-2.0 requires. We did not
 write them and we do not claim that we did.
 
-## What was submitted
+## The archive
 
 One archive, `submission.zip`: **26,271,346 bytes**, SHA-256
 `a25c038c923ceca62ba373810715ed8b2d8796444e76143a2d959f168e3d886e`, 18
@@ -30,10 +30,10 @@ members. Every member is pinned by SHA-256 in
 (team *Nicks Seringian*, `nicks037`, 4 November 2026). That number was produced
 by the organisers' verifier, not by us. The archive described here is the
 **v5** rebuild on the frontier published on 2026-11-04 at 08:00 UTC; its
-**local** geometric mean is **24.556835** (headline **24.5568**). The
-organisers' published score for it is recorded in
-[`receipts/submission-manifest.json`](receipts/submission-manifest.json) once
-the board has re-scored it.
+**local** geometric mean is **24.556835** (headline **24.5568**). That is a
+local measurement and we publish it as such. When the organisers score this
+archive the authoritative number is the one on the competition's own
+leaderboard, not this page, and we do not predict it here.
 
 | benchmark | competition name | circuit | author (Apache-2.0) | local official-verifier cost | factor vs reference |
 |---|---|---|---|---:|---:|
@@ -82,9 +82,12 @@ dataset (`manwithacat/vqcc-apache-public-circuits`) - copying them out of
 files from the public Kaggle dataset API when it is not - re-hashes every
 one of them, **fails closed** on a missing file, an unpinned member or a hash
 mismatch, and writes a fixed-timestamp archive whose SHA-256 is the one
-printed above. Its committed Output contains the archive itself and the
-manifest, so a reader can download both the code and its product and compare
-hashes.
+printed above. Saving a version of the notebook commits the archive itself
+and the manifest to that version's Output, so a reader can download both the
+code and its product and compare hashes. The version currently saved on
+Kaggle predates this rebuild and carries no Output, so today the
+authoritative copy of the archive is the one attached to the competition
+submission.
 
 The same cell is in this repository as
 [`notebooks/generate-submission-v5.ipynb`](notebooks/generate-submission-v5.ipynb).
