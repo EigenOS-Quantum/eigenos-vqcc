@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "EigenOS Quantum Suite - Verifiable Quantum Circuit Compilation submission code"
+message: >-
+  If you use this code, please cite the competition submission it supports.
+  The current submission is assembled from three public Apache-2.0 circuits by
+  other competitors; NOTICE.md credits every author, licence and URL, and gives
+  the SHA-256 of every member of the submitted archive.
+type: software
+authors:
+  - family-names: Seringian
+    given-names: Nicks
+    affiliation: EigenOS Quantum Suite
+  - name: EigenOS Quantum Suite engineering team
+    affiliation: EigenOS Quantum Suite
+date-released: 2026-11-02
+repository-code: "https://github.com/EigenOS-Quantum/eigenos-vqcc"
+license: Apache-2.0
+abstract: >-
+  Software behind the EigenOS Quantum Suite entry to the Google Quantum AI
+  Verifiable Quantum Circuit Compilation competition. The submitted archive holds
+  three circuits assembled from published Apache-2.0 work: invsqrt by Ehan
+  Mallick (62 qubits, 20.6503x the reference), dqi by Akmal Xodarev on
+  SomeJoint's decoder (892 qubits, 64.4371x), and a dfthcsos ANGLE_k family by
+  Isabe11aM00re (428 qubits, 10.2676x). Geometric mean 23.9062. We did not
+  design these circuits. We assembled them, pinned every one of the 18 members
+  with a SHA-256, re-verified all three with the competition's own verifiers on
+  the bytes extracted back out of the packed archive, and published the
+  generating notebook. The modules under src/gen_invsqrt and src/gen_dfthcsos
+  are the generators of our earlier, lower-scoring attempt (public score
+  2.53419); they are kept for attribution and do not produce the current
+  submission.
+keywords:
+  - quantum circuits
+  - kickmix
+  - VQCC
+  - verifiable quantum circuit compilation
