@@ -30,10 +30,12 @@ members. Every member is pinned by SHA-256 in
 (team *Nicks Seringian*, `nicks037`, 4 November 2026). That number was produced
 by the organisers' verifier, not by us. The archive described here is the
 **v5** rebuild on the frontier published on 2026-11-04 at 08:00 UTC; its
-**local** geometric mean is **24.556835** (headline **24.5568**). That is a
-local measurement and we publish it as such. When the organisers score this
-archive the authoritative number is the one on the competition's own
-leaderboard, not this page, and we do not predict it here.
+**local** geometric mean is **24.556835** (headline **24.5568**). When the
+organisers scored that archive the **published** score was **24.55683** - the
+organisers' own number, read from the competition leaderboard on 4 November
+2026 at 16:02 UTC, where it held rank **270** of 2,285 teams. The
+authoritative number is always the one on the competition's own leaderboard,
+not this page.
 
 | benchmark | competition name | circuit | author (Apache-2.0) | local official-verifier cost | factor vs reference |
 |---|---|---|---|---:|---:|
@@ -64,9 +66,9 @@ beats them. What we claim is only what is measured: the archive above is
 byte-reproducible from a public notebook, and the three factors in the table
 are the competition's own verifier output on those bytes.
 
-On 4 November 2026 at 15:26 UTC the public leaderboard read: **leader
-28.83206** (team *James & Geremie & Tony*), **us 24.43253 at rank 639 of
-2,283 teams**. We were **15.26% behind** the leader at that moment. That is
+On 4 November 2026 at 16:02 UTC the public leaderboard read: **leader
+28.83206** (team *James & Geremie & Tony*), **us 24.55683 at rank 270 of
+2,285 teams**. We were **14.83% behind** the leader at that moment. That is
 a dated snapshot of a moving leaderboard, not a standing claim - the live
 board is the only authority on rank, and this line will go stale.
 
