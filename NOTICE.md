@@ -13,37 +13,38 @@ committed in the repository's first two commits, removed from the branch on
 4 November 2026** so that no copy survives anywhere reachable. See the README
 section "What this repository does NOT contain, on purpose".
 
-## 1. The current submission (4 November 2026)
+## 1. The current submission (4 November 2026, v6)
 
 Three circuits assembled from public Apache-2.0 notebooks, verified with the
 competition's own verifiers, and shipped by SHA-256 pin.
 
 | benchmark | competition name | circuit | qubits | cost | factor vs reference |
 |---|---|---|---:|---:|---:|
-| `invsqrt.kmb` | fusion | `53000387a86b` | 62 | 98,061.19483958285 | 21.1783489x |
-| `dqi.kmb` | combinatorial optimization | `748b01a7a076` | 891 | 375,374,174,093.81177 | 65.1069392x |
-| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | chemistry | `37204439f717` | 428 | 312,444,127.2287831 | 10.7398390x |
+| `invsqrt.kmb` | fusion | `af4698478fba` | 62 | 97921.57954257724 | 21.2085451x |
+| `dqi.kmb` | combinatorial optimization | `748b01a7a076` | 891 | 375374174093.81176757812 | 65.1069393x |
+| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | chemistry | `a56ec354e8b8` + `0ed964465654` loaders | 427 | 311465857.06660532951 | 10.7735712x |
 
-Local geometric mean of the three ratios: **24.556835**.
+Local geometric mean of the three ratios: **24.594195**.
 
 ### The upstream authors of the three circuits
 
-- **invsqrt** - Leo Tang, "VQCC T7421 Submission",
-  <https://www.kaggle.com/code/leotang09/vqcc-t7421-submission>, released
-  2026-11-04 07:39 UTC, Apache-2.0. Archive member `53000387a86b`, taken from
-  `circuits/invsqrt/53000387a86b.kmb` in the public Apache-2.0 dataset
+- **invsqrt** - Agniv Banerjee, "QCC ladder parts",
+  <https://www.kaggle.com/datasets/somejoint/qcc-ladder-parts>, released
+  2026-11-04 14:04 UTC, Apache-2.0. Archive member `af4698478fba`, taken from
+  `circuits/invsqrt/af4698478fba.kmb` in the public Apache-2.0 dataset
   `manwithacat/vqcc-apache-public-circuits`.
 - **dqi** - alex chilton, "24.51 LB: Verified Three-Task Portfolio",
   <https://www.kaggle.com/code/alexchilton/24-51-lb-verified-three-task-portfolio>,
   released 2026-11-04 03:14 UTC, Apache-2.0. Archive member `748b01a7a076`,
   taken from `circuits/dqi/748b01a7a076.kmb`.
-- **dfthcsos** - Heliosli, "The dataset is public now. Enjoy!",
-  <https://www.kaggle.com/code/heliosli/the-dataset-is-public-now-enjoy>,
-  released 2026-11-04 04:10 UTC, Apache-2.0. Archive family `37204439f717`,
-  taken from `factorizations/37204439f717.npz` and
-  `circuits/chemistry/37204439f717/angle_k_*.kmb`. The underlying parts are
-  **Isabe11aM00re**'s (9, 143, 39) factorisation and weights on **Syed Asad
-  Ali**'s newer angle loaders; the per-slot combination is Heliosli's.
+- **dfthcsos** - Agniv Banerjee, "QCC ladder parts",
+  <https://www.kaggle.com/datasets/somejoint/qcc-ladder-parts>, released
+  2026-11-04 14:04 UTC, Apache-2.0. Archive family `a56ec354e8b8`
+  (`factorizations/a56ec354e8b8.npz`) with the angle loaders taken from family
+  `0ed964465654` (`circuits/chemistry/0ed964465654/angle_k_*.kmb`), the
+  per-slot combination given by the public ledger's `parts/assembly_best.json`.
+  The loaders themselves are **Ayodeji**'s, on **Lera**'s (8, 143, 45) word
+  table; the weights are Agniv Banerjee's.
 
 Every one of the three is Apache-2.0. Apache-2.0 section 4 requires that
 recipients of a derivative work receive this NOTICE, that the licence and
