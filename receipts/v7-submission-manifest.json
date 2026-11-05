@@ -2,8 +2,9 @@
  "generated_utc": "2026-11-05T01:00:09Z",
  "archive": {
   "name": "submission.zip",
-  "bytes": 537708119,
-  "sha256": "809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c"
+  "bytes": 26174071,
+  "sha256": "1d36f774d4eb7c2ce55b94c98f36dac87ab0f0fefda33312bb4ef869cc37ea22",
+  "note": "The shipped archive is the one produced by notebooks/generate-submission-v7.ipynb (ZIP_DEFLATED, level 9, fixed timestamps). The 18 members are byte-identical to a stored (level 0) packaging of the same content; only the zip container bytes differ between compression builds."
  },
  "members": [
   {
@@ -117,5 +118,11 @@
   "dfthcsos/angle_k_12.kmb": "circuits/chemistry/a344f422f2e0/angle_k_12.kmb",
   "dfthcsos/angle_k_13.kmb": "circuits/chemistry/a344f422f2e0/angle_k_13.kmb",
   "dfthcsos/angle_k_14.kmb": "circuits/chemistry/a344f422f2e0/angle_k_14.kmb"
+ },
+ "archive_stored_alternative": {
+  "name": "submission-stored.zip",
+  "bytes": 537708119,
+  "sha256": "809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c",
+  "note": "Same 18 members, ZIP_STORED. Not shipped; kept as a record."
  }
 }
