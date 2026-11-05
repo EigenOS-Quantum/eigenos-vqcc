@@ -21,8 +21,8 @@ requires. We did not write them and we do not claim that we did.
 
 ## The archive
 
-One archive, `submission.zip`: **537,708,119 bytes**, SHA-256
-`809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c`, 18 members.
+One archive, `submission.zip`: **26,174,071 bytes**, SHA-256
+`1d36f774d4eb7c2ce55b94c98f36dac87ab0f0fefda33312bb4ef869cc37ea22`, 18 members.
 Every member is pinned by SHA-256 in
 [`receipts/v7-submission-manifest.json`](receipts/v7-submission-manifest.json).
 
@@ -133,7 +133,7 @@ You need one cell. The dataset is optional.
 1. Optionally attach `manwithacat/vqcc-apache-public-circuits` (Add Input, then Datasets). If you do not attach it, turn **Internet** on in the Kaggle session panel and the cell will download the same 18 files itself.
 2. Run [`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb), or paste its single cell into a Kaggle notebook.
 3. The cell prints the archive SHA-256. It must equal
-   `809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c`.
+   `1d36f774d4eb7c2ce55b94c98f36dac87ab0f0fefda33312bb4ef869cc37ea22`.
 
 To run it outside Kaggle, mount the dataset directory and point the two
 environment variables at it:
