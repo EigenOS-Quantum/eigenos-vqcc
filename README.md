@@ -14,63 +14,79 @@ was generated, and that description *"should also include a link to a code
 repository with complete and detailed instructions so that the results obtained
 can be reproduced."*
 
-**Read [NOTICE.md](NOTICE.md) before anything else.** The circuits in the
-current submission are other competitors' Apache-2.0 public work. They are
-credited by name, by URL and by licence, as Apache-2.0 requires. We did not
-write them and we do not claim that we did.
+**Read [NOTICE.md](NOTICE.md) and [NOTICE-v7.md](NOTICE-v7.md) before anything
+else.** The circuits in the current submission are other competitors' Apache-2.0
+public work. They are credited by name, by URL and by licence, as Apache-2.0
+requires. We did not write them and we do not claim that we did.
 
 ## The archive
 
-One archive, `submission.zip`: **26,156,017 bytes**, SHA-256
-`44ef406039b7003367db18d59c6822668afa766544f9314b5cf8dd752b16f604`, 18 members. Every member is pinned by SHA-256 in
-[`receipts/submission-manifest.json`](receipts/submission-manifest.json).
+One archive, `submission.zip`: **537,708,119 bytes**, SHA-256
+`809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c`, 18 members.
+Every member is pinned by SHA-256 in
+[`receipts/v7-submission-manifest.json`](receipts/v7-submission-manifest.json).
 
-This is the **v6** rebuild, on the public frontier as of 4 November 2026
-16:00 UTC. Its **local** geometric mean is **24.594195** (headline **24.59420**).
-That is a local measurement and we publish it as such. The authoritative
-number is always the one on the competition's own leaderboard, not this
-page.
+This is the **v7** rebuild, built 5 November 2026. Its **local** geometric mean
+is **24.653969** (headline **24.65397**). That is a local measurement and we
+publish it as such. The authoritative number is always the one on the
+competition's own leaderboard, not this page.
 
 **Measured public leaderboard score of the preceding (v5) submission:
 24.55683** (team *Nicks Seringian*, `nicks037`, 4 November 2026) - the
-organisers' own number, read from the competition leaderboard on 4 November
-2026 at 16:02 UTC, where it held rank **270** of 2,285 teams. The v5 archive
+organisers' own number, read from the competition leaderboard. The v5 archive
 had SHA-256 `a25c038c923ceca62ba373810715ed8b2d8796444e76143a2d959f168e3d886e`.
+The v6 archive was built but **not** uploaded.
 
-| benchmark | competition name | circuit | author (Apache-2.0) | local official-verifier cost | factor vs reference |
+| benchmark | competition name | circuit | author | local official-verifier cost | factor vs reference |
 |---|---|---|---|---:|---:|
 | `invsqrt.kmb` | **fusion** | `af4698478fba` | Agniv Banerjee | 97921.57954257724 | **21.2085451x** |
-| `dqi.kmb` | **combinatorial optimization** | `748b01a7a076` | alex chilton | 375374174093.81176757812 | **65.1069393x** |
-| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | **chemistry** | `a56ec354e8b8` + `0ed964465654` loaders | Agniv Banerjee (weights) on Ayodeji's loaders | 311465857.06660532951 | **10.7735712x** |
+| `dqi.kmb` | **combinatorial optimization** | `993c70386a3d` | yoyobar | 375373377713.4055 | **65.1071064x** |
+| `dfthcsos/angle_k_0..14.kmb` + `dfthcsos/submission.npz` | **chemistry** | `a344f422f2e0` loaders + `b93b4db795e7` npz | see [NOTICE-v7.md](NOTICE-v7.md) | 309206676.09009403 | **10.8522873x** |
 
-Local geometric mean of the three ratios: **24.594195**.
+Local geometric mean of the three ratios: **24.653969**.
 
 The organisers measure the reference cost with a per-split secret salt, so the
-last digits of a published score can differ from a local run; ours differ in
-the sixth decimal place and nowhere else.
+last digits of a published score can differ from a local run.
 
 The chemistry family is the competition's own `dfthcsos` verifier reporting
-**PASS** on exactly these bytes (`score` 312,444,127.2287831, 15,525 Toffolis,
-428 qubits, 87,232 verified shots). The fusion and dqi circuits were verified
-with the competition's own verifier logic run through the kickmix Rust
-sampler; the receipts are in [`receipts/`](receipts/).
+**PASS** on exactly these bytes (`score` 309,206,676.09009403, 15,347 Toffolis,
+427 qubits, 78,080 verified shots, `lambda_eff` 47.18429756505502). The dqi
+circuit is the same verifier reporting **PASS** (102,400 shots, 891 qubits,
+0 value errors, 0 phase errors). The fusion circuit's official-verifier report
+is recorded in [`receipts/v7-invsqrt-verify.json`](receipts/v7-invsqrt-verify.json);
+the receipts are in [`receipts/`](receipts/).
+
+### A measured comparison we did not expect
+
+Pairing the same fifteen chemistry loaders with a different published
+factorization changes the score. We ran both through the official verifier:
+
+| chemistry npz | score | verdict |
+|---|---:|---|
+| `b93b4db795e7` (shipped) | **309,206,676.09009403** | better |
+| `0ed964465654` | 309,746,758.2195386 | worse by 540,082 |
+
+We ship the better pairing. Both are published, Apache-2.0 ledger files; see
+[NOTICE-v7.md](NOTICE-v7.md) for the full provenance of the mixed assembly.
 
 ### Honest statement about standing
 
-As of the 4 November 2026 08:00 UTC snapshot of the public circuit ledger, the
-three circuits above were the best published for their task. **That frontier
-moves every day** - it moved twice on 4 November alone, and each move made
-earlier versions of this README false. We therefore make **no claim that these
-circuits remain the best in the field**, and none that nothing published
-beats them. What we claim is only what is measured: the archive above is
-byte-reproducible from a public notebook, and the three factors in the table
-are the competition's own verifier output on those bytes.
+The circuits above were the best published for their task at the time the
+ledger snapshot was taken. **That frontier moves every day** - it moved twice on
+4 November alone, and each move made earlier versions of this README false. We
+therefore make **no claim that these circuits remain the best in the field**,
+and none that nothing published beats them. What we claim is only what is
+measured: the archive above is byte-reproducible from a public notebook, and
+the three factors in the table are the competition's own verifier output on
+those bytes.
 
-On 4 November 2026 at 16:02 UTC the public leaderboard read: **leader
-28.83206** (team *James & Geremie & Tony*), **us 24.55683 at rank 270 of
-2,285 teams**. We were **14.83% behind** the leader at that moment. That is
-a dated snapshot of a moving leaderboard, not a standing claim - the live
-board is the only authority on rank, and this line will go stale.
+Public leaderboard snapshot, read 5 November 2026 00:58 UTC, **2,311 teams**:
+**leader 28.83206** (team *James & Geremie & Tony*), **us 24.55683 at rank 460**.
+The v7 score of 24.653969 would place us at roughly **rank 196** on that same
+snapshot, inside the bronze band. Both are dated snapshots of a moving
+leaderboard, not standing claims - the live board is the only authority on rank,
+and these lines will go stale. The snapshot we used is in
+[`receipts/v7-board-snapshot.json`](receipts/v7-board-snapshot.json).
 
 ## The public generator notebook
 
@@ -84,35 +100,40 @@ dataset (`manwithacat/vqcc-apache-public-circuits`) - copying them out of
 files from the public Kaggle dataset API when it is not - re-hashes every
 one of them, **fails closed** on a missing file, an unpinned member or a hash
 mismatch, and writes a fixed-timestamp archive whose SHA-256 is the one
-printed above. Saving a version of the notebook commits the archive itself
-and the manifest to that version's Output, so a reader can download both the
-code and its product and compare hashes. The version currently saved on
-Kaggle predates this rebuild and carries no Output, so today the
-authoritative copy of the archive is the one attached to the competition
-submission.
+printed above.
 
-The same cell is in this repository as
-[`notebooks/generate-submission-v6.ipynb`](notebooks/generate-submission-v6.ipynb).
+**State of that notebook as of 5 November 2026: version 3, carrying the older
+v4 cell, no saved outputs, and `dataSources: []`.** Run as it stands it
+rebuilds a different, older archive. The v7 cell is
+[`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb)
+in this repository; publishing it as a new version of the Kaggle notebook and
+saving its outputs is what makes the archive reproducible from a public
+notebook, which the Milestone and Longest Leader prizes require.
+
+The same cell is also in this repository as
+[`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb).
 
 ## Measured results, not estimates
 
 Every number above comes from a recorded verifier run. The receipts are in
 [`receipts/`](receipts/):
 
-- `receipts/invsqrt-verify.json` - the `invsqrt` verifier result for the v6 fusion circuit (PASS, 262,144 shots, 62 qubits, circuit SHA-256). This one is a **sampled** run over the first 65,536 addresses, not the full domain, so it corroborates the ledger's ranking rather than reproducing the full-domain cost.
-- `receipts/dqi-verify.json` - the `dqi` verifier result (PASS, 102,400 shots, 891 qubits, 0 value errors, 0 phase errors, circuit SHA-256)
-- `receipts/dfthcsos-verify.json` - the `dfthcsos` verifier result for the v6 chemistry family (PASS, 87,232 shots, 15,459 Toffolis, 427 qubits, score 311,465,857.0666053)
-- `receipts/submission-manifest.json` - SHA-256 of every member of `submission.zip`, plus the archive's own SHA-256
+- `receipts/v7-chemistry-verify.json` - the `dfthcsos` verifier result for the v7 chemistry assembly (PASS, 78,080 verified shots, 15,347 Toffolis, 427 qubits, score 309,206,676.09009403, `lambda_eff` 47.18429756505502)
+- `receipts/v7-dqi-verify.json` - the `dqi` verifier result (PASS, 102,400 shots, 891 qubits, 0 value errors, 0 phase errors, circuit SHA-256)
+- `receipts/v7-invsqrt-verify.json` - the `invsqrt` official-verifier report for the v7 fusion circuit (PASS, 62 qubits, circuit SHA-256, report SHA-256)
+- `receipts/v7-submission-manifest.json` - SHA-256 and byte size of every member of `submission.zip`, the dataset path each member came from, and the archive's own SHA-256
+- `receipts/v7-board-snapshot.json` - the leaderboard snapshot behind the rank lines above
 - `receipts/apache-manifest.csv` - the public circuit ledger this rebuild is taken from
+- `receipts/submission-manifest.json`, `receipts/dqi-verify.json`, `receipts/invsqrt-verify.json`, `receipts/dfthcsos-verify.json` - the earlier v6 receipts, kept for the record
 
 ## Reproduce it
 
 You need one cell. The dataset is optional.
 
 1. Optionally attach `manwithacat/vqcc-apache-public-circuits` (Add Input, then Datasets). If you do not attach it, turn **Internet** on in the Kaggle session panel and the cell will download the same 18 files itself.
-2. Run [`notebooks/generate-submission-v6.ipynb`](notebooks/generate-submission-v6.ipynb), or paste its single cell into a Kaggle notebook.
+2. Run [`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb), or paste its single cell into a Kaggle notebook.
 3. The cell prints the archive SHA-256. It must equal
-   `44ef406039b7003367db18d59c6822668afa766544f9314b5cf8dd752b16f604`.
+   `809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c`.
 
 To run it outside Kaggle, mount the dataset directory and point the two
 environment variables at it:
@@ -120,7 +141,7 @@ environment variables at it:
 ```bash
 export VQCC_INPUT_ROOT=/path/to/the/dataset/parent
 export VQCC_WORK_DIR=/path/to/a/writable/dir
-python3 notebooks/generate-submission-v6.ipynb
+python3 notebooks/generate-submission-v7.ipynb
 ```
 
 The archive is byte-reproducible: fixed timestamps, fixed member order, fixed
@@ -131,10 +152,10 @@ Where each member comes from:
 
 | archive member | path inside the dataset | author |
 |---|---|---|
-| `invsqrt.kmb` | `circuits/invsqrt/53000387a86b.kmb` | Leo Tang |
-| `dqi.kmb` | `circuits/dqi/748b01a7a076.kmb` | alex chilton |
-| `dfthcsos/submission.npz` | `factorizations/37204439f717.npz` | Heliosli |
-| `dfthcsos/angle_k_0..14.kmb` | `circuits/chemistry/37204439f717/angle_k_*.kmb` | Heliosli |
+| `invsqrt.kmb` | `circuits/invsqrt/af4698478fba.kmb` | Agniv Banerjee |
+| `dqi.kmb` | `circuits/dqi/993c70386a3d.kmb` | yoyobar |
+| `dfthcsos/submission.npz` | `factorizations/b93b4db795e7.npz` | Kaliden Aiarys |
+| `dfthcsos/angle_k_0..14.kmb` | `circuits/chemistry/a344f422f2e0/angle_k_*.kmb` | see [NOTICE-v7.md](NOTICE-v7.md) |
 
 ## What this repository does NOT contain, on purpose
 
@@ -166,16 +187,27 @@ code and notes and explicitly keep the competition data out for this reason.
 
 - We did not modify any verifier. `kickmix`, the verifiers and the reference
   circuits are the competition's own, Apache-2.0, and are used unmodified.
-- We did not design, build or modify the three circuits in the current
-  submission. We assembled, hash-pinned, verified and documented them.
+- We did not design, build or modify the seventeen circuit binaries in the
+  current submission, nor the published factorization. We assembled,
+  hash-pinned, verified and documented them.
 - We did not measure our factors with our own scoring code. The official
   verifier does the scoring.
-- We did not take any circuit, artefact or score from another team's submitted
-  archive, and we did not use any private dataset. Every circuit we used was
-  published, under Apache-2.0, before we used it.
-- We did not redistribute any third-party binary in the current submission
-  other than the three Apache-2.0 circuits it is made of, credited above with
-  their SHA-256.
+- We did not download any team's submission archive, and we did not use any
+  private dataset. Every member was fetched from the public dataset
+  `manwithacat/vqcc-apache-public-circuits` and is SHA-256 pinned.
+- **Corrected, stated loudly:** an earlier version of this file said *"We did
+  not take any circuit, artefact or score from another team's submitted
+  archive."* For v7 that wording was misleading. These are other teams'
+  circuits - the same circuit files those teams submitted, republished by a
+  public Apache-2.0 dataset - and we did not author them. We corrected the
+  sentence rather than leave it standing.
+- **Open legal item, disclosed not buried:** the dqi circuit is from a lineage
+  whose own author states that the earlier chain *"includes material without
+  an explicit source license, which we do not relicense"*. The ledger's
+  Apache-2.0 tag for it came from a notebook footer, not from the
+  redistributed circuit bytes. We did not resolve this. It is documented in
+  [NOTICE-v7.md](NOTICE-v7.md), and building our own dqi circuit from
+  licence-clean source is the fix we are working on.
 
 ## Licence
 
