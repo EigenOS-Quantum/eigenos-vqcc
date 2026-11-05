@@ -1,0 +1,23 @@
+{
+ "polled_utc": "2026-11-05T01:01:29Z",
+ "teams": 2310,
+ "our_teamId": 17202248,
+ "our_rank": 460,
+ "our_score": 24.55683,
+ "thresholds": {
+  "rank_1": 28.83206,
+  "rank_10": 26.5045,
+  "rank_14": 26.21949,
+  "rank_50": 24.94364,
+  "rank_100": 24.72025,
+  "rank_115": 24.70047,
+  "rank_134": 24.69663,
+  "rank_230": 24.65382,
+  "rank_460": 24.55683
+ },
+ "leader_score": 28.83206,
+ "v7_projected_gm": 24.653969,
+ "v7_teams_above": 195,
+ "v7_projected_rank": 196,
+ "_note": "v7_projected_rank is computed from this same snapshot; the board moves. Rank 1 carries a placeholder displayScore of 1.00000 - the real leading score is in leader_score."
+}
