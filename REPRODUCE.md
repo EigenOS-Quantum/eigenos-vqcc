@@ -14,7 +14,7 @@ there; do not transcribe it from a document.
 
 1. On Kaggle, open any notebook and **Add Input -> Datasets ->
    `manwithacat/vqcc-apache-public-circuits`**.
-2. Open [`notebooks/generate-submission-v5.ipynb`](notebooks/generate-submission-v5.ipynb).
+2. Open [`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb).
    It is one markdown cell and one code cell.
 3. Paste the code cell into a Kaggle notebook (or open the file directly as a
    notebook and Run All).
@@ -35,7 +35,7 @@ somewhere on disk. It reads two environment variables:
 ```bash
 export VQCC_INPUT_ROOT=/path/to/the/parent/of/the/dataset
 export VQCC_WORK_DIR=/path/to/a/writable/dir
-python3 notebooks/generate-submission-v5.ipynb
+python3 notebooks/generate-submission-v7.ipynb
 ```
 
 `VQCC_INPUT_ROOT` is the directory **containing** the dataset, not the dataset
