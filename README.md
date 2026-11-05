@@ -113,6 +113,16 @@ notebook, which the Milestone and Longest Leader prizes require.
 The same cell is also in this repository as
 [`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb).
 
+**Generator version v7.1** (the cell in this repository) fixes three things:
+it prints what is mounted under `/kaggle/input` before it searches; it finds
+the mounted dataset by walking up from any member file until all 18 member
+paths resolve, so it no longer depends on the name Kaggle gives the mount
+folder; and it streams the zip at compression level 6, which packs the 530 MB
+dqi circuit in about 10 seconds instead of ten minutes. The archive the
+v7.1 cell produces is 28,266,629 bytes and contains the **same 18 members**
+as the 26,174,071-byte archive above - only the zip container differs, and
+the members are the only thing the verifier reads.
+
 ## Measured results, not estimates
 
 Every number above comes from a recorded verifier run. The receipts are in
@@ -132,8 +142,11 @@ You need one cell. The dataset is optional.
 
 1. Optionally attach `manwithacat/vqcc-apache-public-circuits` (Add Input, then Datasets). If you do not attach it, turn **Internet** on in the Kaggle session panel and the cell will download the same 18 files itself.
 2. Run [`notebooks/generate-submission-v7.ipynb`](notebooks/generate-submission-v7.ipynb), or paste its single cell into a Kaggle notebook.
-3. The cell prints the archive SHA-256. It must equal
-   `1d36f774d4eb7c2ce55b94c98f36dac87ab0f0fefda33312bb4ef869cc37ea22`.
+3. The cell prints the archive SHA-256 and the member count. It must print
+   **`18 of 18 members OK, 0 bad`**. The zip *container* bytes depend on the
+   zlib build, so the container SHA-256 can differ from the one printed here;
+   the 18 *members* are pinned by SHA-256 and cannot differ. The generator
+   checks this itself and says so.
 
 To run it outside Kaggle, mount the dataset directory and point the two
 environment variables at it:
