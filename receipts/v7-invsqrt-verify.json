@@ -1,0 +1,14 @@
+{
+ "task": "invsqrt",
+ "status": "PASS",
+ "score": 97921.57954257724,
+ "num_qubits": 62,
+ "circuit_sha256": "af4698478fbad775a5a271690cf4c2d8783caf0b8d12048106d1973c4ac6862e",
+ "circuit_sha12": "af4698478fba",
+ "official_verifier_report_sha256": "a0538a0e1e102c5ab5cd357024100519ce54a9034051ddf4a7640b93f4c94f3b",
+ "score_tier": "local official verifier, default salt",
+ "author_of_circuit": "Agniv Banerjee",
+ "licence": "Apache-2.0",
+ "licence_evidence": "https://www.kaggle.com/datasets/somejoint/qcc-ladder-parts: dataset public; licence in the dataset metadata",
+ "_note": "Identical bytes to the member named invsqrt.kmb in submission-manifest.json. A fresh full-domain EigenOS run was in flight at generation time; the report sha256 above is the recorded official-verifier result for these exact bytes."
+}
