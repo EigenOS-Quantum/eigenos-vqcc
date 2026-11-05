@@ -1,8 +1,8 @@
 # NOTICE-v7 - provenance and licence evidence for the v7 submission
 
 Date: 5 November 2026. Applies to `submission.zip`, SHA-256
-`809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c`,
-537,708,119 bytes, 18 members.
+`1d36f774d4eb7c2ce55b94c98f36dac87ab0f0fefda33312bb4ef869cc37ea22`,
+26,174,071 bytes, 18 members.
 
 This file supplements [NOTICE.md](NOTICE.md). NOTICE.md covers the v6 rebuild
 and the earlier work. This one covers the v7 archive only, and it changes one
