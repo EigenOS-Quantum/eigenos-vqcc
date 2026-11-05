@@ -1,0 +1,121 @@
+{
+ "generated_utc": "2026-11-05T01:00:09Z",
+ "archive": {
+  "name": "submission.zip",
+  "bytes": 537708119,
+  "sha256": "809a51a9a2f294add361a56430a8c8ed9aefbde4e62190751598abf8f0b5da7c"
+ },
+ "members": [
+  {
+   "member": "invsqrt.kmb",
+   "bytes": 479055,
+   "sha256": "af4698478fbad775a5a271690cf4c2d8783caf0b8d12048106d1973c4ac6862e"
+  },
+  {
+   "member": "dqi.kmb",
+   "bytes": 529710680,
+   "sha256": "993c70386a3dde6664ecea36315db3aa60fb18a96dc714a18160cae3472378db"
+  },
+  {
+   "member": "dfthcsos/submission.npz",
+   "bytes": 1866292,
+   "sha256": "b463690f734a8c4aae5c19677d7be6ae7589f05d69ad06b93f1c166d671af9df"
+  },
+  {
+   "member": "dfthcsos/angle_k_0.kmb",
+   "bytes": 413385,
+   "sha256": "2665ce00a1704f63e9d7d3532877568a86bd4d95a90d21e62fd1a9f81ff68298"
+  },
+  {
+   "member": "dfthcsos/angle_k_1.kmb",
+   "bytes": 410647,
+   "sha256": "4a551d80b9845030ff32fed85066de9d1d2aaf1629d4f560abf4a533f8848034"
+  },
+  {
+   "member": "dfthcsos/angle_k_10.kmb",
+   "bytes": 365906,
+   "sha256": "e832d29420b4beffc017cc688b0d552354681162faf3cef0ac3b4732d33a4f28"
+  },
+  {
+   "member": "dfthcsos/angle_k_11.kmb",
+   "bytes": 368374,
+   "sha256": "91d72f75bc5d33feadc33635de06052314ee75c708abcf867e3a3374e8f6029d"
+  },
+  {
+   "member": "dfthcsos/angle_k_12.kmb",
+   "bytes": 362461,
+   "sha256": "1cc58e1bf53f1020cc46a1720f4dca9db8d82b56024a2ea0119486af6b9add41"
+  },
+  {
+   "member": "dfthcsos/angle_k_13.kmb",
+   "bytes": 363208,
+   "sha256": "167b7d5a45dcf09139dd31cd8283b8493cde0dbceeba72eea64970398e0d2b78"
+  },
+  {
+   "member": "dfthcsos/angle_k_14.kmb",
+   "bytes": 365401,
+   "sha256": "929035ff8206ad7879d6255cddf25cd3e46f54a67984aa765a50d84d78550caa"
+  },
+  {
+   "member": "dfthcsos/angle_k_2.kmb",
+   "bytes": 411019,
+   "sha256": "67fd7e8f917da9b52ff017787973e447bc3935c8fd768a1c8198d39aa1c6193f"
+  },
+  {
+   "member": "dfthcsos/angle_k_3.kmb",
+   "bytes": 408565,
+   "sha256": "0d96dcfd083d448eda6ae1156f9037a8f5c044e4db13b8fa4d0b4faf98a6269b"
+  },
+  {
+   "member": "dfthcsos/angle_k_4.kmb",
+   "bytes": 362425,
+   "sha256": "a2b1bddb016684e770d237d4937abc3773015017a12177cc769217f02d928bb4"
+  },
+  {
+   "member": "dfthcsos/angle_k_5.kmb",
+   "bytes": 362028,
+   "sha256": "e5a93b28520c35ce8244e2b79fe59ca9f06575ba1890d39788d8d4c5446e049b"
+  },
+  {
+   "member": "dfthcsos/angle_k_6.kmb",
+   "bytes": 364878,
+   "sha256": "ccdcb391f67e720e53434a1c2deaa6d3499ef86cf8663db42523cca11775638e"
+  },
+  {
+   "member": "dfthcsos/angle_k_7.kmb",
+   "bytes": 363581,
+   "sha256": "7a4e30f7112cd70d5c1adb1a1b6861eb9ed548c3277ee2e80efb20e49382d5f7"
+  },
+  {
+   "member": "dfthcsos/angle_k_8.kmb",
+   "bytes": 364774,
+   "sha256": "a04028ecf1002a9f7b43f2b6d4621d76d858264fca008661e22a18900b7268ff"
+  },
+  {
+   "member": "dfthcsos/angle_k_9.kmb",
+   "bytes": 363298,
+   "sha256": "60c4c540710a1ad71c4e67b48c84383902cd2c11bacf2c9408b44c57a52f0b5e"
+  }
+ ],
+ "dataset": "manwithacat/vqcc-apache-public-circuits",
+ "dataset_paths": {
+  "invsqrt.kmb": "circuits/invsqrt/af4698478fba.kmb",
+  "dqi.kmb": "circuits/dqi/993c70386a3d.kmb",
+  "dfthcsos/submission.npz": "factorizations/b93b4db795e7.npz",
+  "dfthcsos/angle_k_0.kmb": "circuits/chemistry/a344f422f2e0/angle_k_0.kmb",
+  "dfthcsos/angle_k_1.kmb": "circuits/chemistry/a344f422f2e0/angle_k_1.kmb",
+  "dfthcsos/angle_k_2.kmb": "circuits/chemistry/a344f422f2e0/angle_k_2.kmb",
+  "dfthcsos/angle_k_3.kmb": "circuits/chemistry/a344f422f2e0/angle_k_3.kmb",
+  "dfthcsos/angle_k_4.kmb": "circuits/chemistry/a344f422f2e0/angle_k_4.kmb",
+  "dfthcsos/angle_k_5.kmb": "circuits/chemistry/a344f422f2e0/angle_k_5.kmb",
+  "dfthcsos/angle_k_6.kmb": "circuits/chemistry/a344f422f2e0/angle_k_6.kmb",
+  "dfthcsos/angle_k_7.kmb": "circuits/chemistry/a344f422f2e0/angle_k_7.kmb",
+  "dfthcsos/angle_k_8.kmb": "circuits/chemistry/a344f422f2e0/angle_k_8.kmb",
+  "dfthcsos/angle_k_9.kmb": "circuits/chemistry/a344f422f2e0/angle_k_9.kmb",
+  "dfthcsos/angle_k_10.kmb": "circuits/chemistry/a344f422f2e0/angle_k_10.kmb",
+  "dfthcsos/angle_k_11.kmb": "circuits/chemistry/a344f422f2e0/angle_k_11.kmb",
+  "dfthcsos/angle_k_12.kmb": "circuits/chemistry/a344f422f2e0/angle_k_12.kmb",
+  "dfthcsos/angle_k_13.kmb": "circuits/chemistry/a344f422f2e0/angle_k_13.kmb",
+  "dfthcsos/angle_k_14.kmb": "circuits/chemistry/a344f422f2e0/angle_k_14.kmb"
+ }
+}
